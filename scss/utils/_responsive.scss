@@ -1,0 +1,56 @@
+/* iphone5 */
+@media only screen and (min-width: 320px) {
+  html {
+    /* 320/375 = 0.853333*/
+    font-size: 533.333333% !important;
+  }
+}
+/* android */
+@media only screen and (min-width: 360px) {
+  html {
+    /* 360/375 = 0.96  */
+    font-size: 600% !important;
+  }
+}
+/* iphone6 */
+@media only screen and (min-width: 375px) {
+  html {
+    /* 375/375 = 1  */
+    font-size: 625% !important;
+  }
+}
+/* iphone6Plus */
+@media only screen and (min-width: 414px) {
+  html {
+    /* 414/375 = 1.104 */
+    font-size: 690% !important;
+  }
+}
+
+/* ipad 768 */
+@media only screen and (min-width: 768px) {
+  html {
+    /* 768/375 = 2.048 */
+    font-size: 1280% !important;
+  }
+}
+
+/* ipad pro */
+@media only screen and (min-width: 1024px) {
+  html {
+    /* 1024/375 = 2.73 */
+    font-size: 1706% !important;
+  }
+}
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  font-size: 625%;
+  /* 取消手机点击屏幕时，会出现的灰块 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  font-size: .12rem;
+}

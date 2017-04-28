@@ -1,0 +1,237 @@
+/* css for reset.scss */
+//
+//  HTML5 Reset :: style.css
+//  ---------------------------------------------------------- 
+
+html, body, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, 
+address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, 
+sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, 
+footer, header, menu, nav, section, time, mark, audio, video, details, 
+summary {
+  margin: 0;
+  padding: 0;
+  border: 0; 
+}
+article, aside, figure, footer, header, nav, section, details, summary {
+  display: block;
+}
+// Handle box-sizing while better addressing child elements:
+// https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+html {
+  box-sizing: border-box;
+}
+body{
+  font-family: "PingFangSC", "Helvetica Neue", Helvetica, sans-serif;
+  -webkit-overflow-scrolling: touch;  
+}
+html,body{
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+// Responsive images and other embedded objects
+img,
+object,
+embed {
+  max-width: 100%;
+}
+img{
+  display: inline-block;
+  box-sizing: content-box;
+  text-align: center;
+  position: relative;
+} 
+img:after {  
+  content: attr(alt);
+  font-size: .16rem;
+  font-family: FontAwesome;
+  color: rgb(100, 100, 100);
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 5;
+  background-color: #bbbbbb;
+}
+// Force a vertical scrollbar to prevent a jumpy page
+html {
+  overflow-y: scroll;
+}
+// We use a lot of ULs that aren't bulleted.
+// Don't forget to restore the bullets within content.
+ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+a {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  // color: $color-primary;
+  /* 消除点击后出现闪动或灰色背景 */
+  -webkit-tap-highlight-color: transparent;
+}  
+del {
+  text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+// Tables still need cellspacing="0" in the markup
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+td {
+  font-weight: normal;
+  vertical-align: top;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input, select {
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+}
+pre {
+  white-space: pre;
+  // CSS2
+  white-space: pre-wrap;
+  // CSS 2.1
+  white-space: pre-line;
+  // CSS 3 (and 2.1 as well, actually)
+  word-wrap: break-word;
+  // IE
+}
+//隐藏文本框阴影
+input, textarea{
+  -webkit-appearance: none;
+}
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+// select, input, textarea {
+//   font: 99% sans-serif;
+// }
+table {
+  font-size: inherit;
+  font: 100%;
+}
+small {
+  font-size: 85%;
+}
+strong {
+  font-weight: bold;
+}
+td, td img {
+  vertical-align: top;
+}
+// Make sure sup and sub don't mess with your line-heights 
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+// Standardize any monospaced elements
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif;
+}
+// Hand cursor on clickable elements
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+  cursor: pointer;
+}
+// Webkit browsers add a 2px margin outside the chrome of form elements
+button, input, select, textarea {
+  margin: 0;
+}
+// Make buttons play nice in IE
+button,
+input[type=button] {
+  width: auto;
+  overflow: visible;
+}
+// Remove focus blue borders
+:focus{
+  outline: none;
+}
+i,
+em{
+  font-style: normal;
+}
+
+//Reset scrollbar
+::-webkit-scrollbar {
+  width: 0;
+}
+//Reset search closebtn
+::-ms-clear{ 
+  display: none; 
+}
+/* 去除圆角 */
+input[type=search] {
+  -webkit-appearance: none; 
+}
+/* 隐藏取消按钮 */
+::-webkit-search-cancel-button { 
+  -webkit-appearance: none; 
+}
+/* 隐藏放大镜 */
+::-webkit-search-results-button { 
+  -webkit-appearance: none; 
+}
+li{
+  list-style: none;
+}
+.c_eb9605{
+  color: #eb9605;
+}
+.font25{
+  font-size: .25rem;
+}
+.font18{
+  font-size: .18rem;
+}

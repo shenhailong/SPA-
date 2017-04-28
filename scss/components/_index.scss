@@ -1,0 +1,60 @@
+nav{
+  height:.4rem;
+  width:100%;
+  border-top:1px solid #000;
+  position:fixed;
+  bottom:0;
+  display: flex;
+  justify-content:space-around;
+
+  .home{
+    background:url('../img/home-1.png') ;
+    height:16px;
+    width:16px;
+  }
+  .home.active{
+    background:url('../img/home-2.png');
+    height:16px;
+    width:16px;
+  }
+  .classify{
+    background:url('../img/classify-1.png') ;
+    height:16px;
+    width:16px;
+  }
+  .classify.active{
+    background:url('../img/classify-2.png');
+    height:16px;
+    width:16px;
+  }
+  .search{
+    background:url('../img/search-1.png') ;
+    height:16px;
+    width:16px;
+  }
+  .search.active{
+    background:url('../img/search-2.png');
+    height:16px;
+    width:16px;
+  }
+  .cart{
+    background:url('../img/cart-1.png') ;
+    height:16px;
+    width:16px;
+  }
+  .cart.active{
+    background:url('../img/cart-2.png');
+    height:16px;
+    width:16px;
+  }
+  .me{
+    background:url('../img/me-1.png') ;
+    height:16px;
+    width:16px;
+  }
+  .me.active{
+    background:url('../img/me-2.png');
+    height:16px;
+    width:16px;
+  }
+}
