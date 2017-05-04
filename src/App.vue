@@ -1,28 +1,13 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <!--<img src="./assets/logo.png">-->
     <router-view></router-view>
     <nav>
-        <router-link to='/home'>
-        <i class="icon disB home" :class='currentIcon.home'>icon</i>
-        首页</router-link>
-
-        <router-link to='/classify'>
-          <i class="icon disB classify" :class='currentIcon.classify'>icon</i>
-          分类
-        </router-link>
-
-        <router-link to='/search'>
-        <i class="icon disB search" :class='currentIcon.search'>icon</i>
-        查询</router-link>
-
-        <router-link to='/cart'>
-        <i class="icon disB cart" :class='currentIcon.cart'>icon</i>
-        购物车</router-link>
-
-        <router-link to='/me'>
-        <i class="icon disB me" :class='currentIcon.me'>icon</i>
-        我的</router-link>
+        <router-link to='/home'><i class="icon disB home" :class='currentIcon.home'>icon</i>首页</router-link>
+        <router-link to='/classify'><i class="icon disB classify" :class='currentIcon.classify'>icon</i>分类</router-link>
+        <router-link to='/search'><i class="icon disB search" :class='currentIcon.search'>icon</i>查询</router-link>
+        <router-link to='/cart'><i class="icon disB cart" :class='currentIcon.cart'>icon</i>购物车</router-link>
+        <router-link to='/me'><i class="icon disB me" :class='currentIcon.me'>icon</i>我的</router-link>
     </nav>
   </div>
 </template>
@@ -86,8 +71,8 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /*text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 60px;*/
 }
 </style>

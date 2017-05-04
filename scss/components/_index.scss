@@ -7,54 +7,89 @@ nav{
   display: flex;
   justify-content:space-around;
 
+  a{
+    display: block;
+    height: 100%;
+    width: .4rem;
+    color: #000;
+    text-align: center
+  }
   .home{
-    background:url('../img/home-1.png') ;
-    height:16px;
-    width:16px;
+    background:url('../img/home-1.png') no-repeat top center;
+    height:60%;
+    width:60%;
+    margin:0 auto;
+    background-size: 100% 100%;
   }
   .home.active{
-    background:url('../img/home-2.png');
-    height:16px;
-    width:16px;
+    background:url('../img/home-2.png') no-repeat top center;
+    height:60%;
+    width:60%;
+    margin:0 auto;
+    background-size: 100% 100%;
   }
   .classify{
-    background:url('../img/classify-1.png') ;
-    height:16px;
-    width:16px;
+    background:url('../img/classify-1.png') no-repeat top center;
+    height:60%;
+    width:60%;
+    margin:0 auto;
+    background-size: 100% 100%;
+    overflow: hidden
   }
   .classify.active{
-    background:url('../img/classify-2.png');
-    height:16px;
-    width:16px;
+    background:url('../img/classify-2.png') no-repeat top center;
+    height:60%;
+    width:60%;
+    margin:0 auto;
+    background-size: 100% 100%;
   }
   .search{
-    background:url('../img/search-1.png') ;
-    height:16px;
-    width:16px;
+    background:url('../img/search-1.png') no-repeat top center;
+    height:60%;
+    width:60%;
+    margin:0 auto;
+    background-size: 100% 100%;
   }
   .search.active{
-    background:url('../img/search-2.png');
-    height:16px;
-    width:16px;
+    background:url('../img/search-2.png') no-repeat top center;
+    height:60%;
+    width:60%;
+    margin:0 auto;
+    background-size: 100% 100%;
   }
   .cart{
-    background:url('../img/cart-1.png') ;
-    height:16px;
-    width:16px;
+    background:url('../img/cart-1.png') no-repeat top center;
+    height:60%;
+    width:60%;
+    margin:0 auto;
+    background-size: 100% 100%;
   }
   .cart.active{
-    background:url('../img/cart-2.png');
-    height:16px;
-    width:16px;
+    background:url('../img/cart-2.png') no-repeat top center;
+    height:60%;
+    width:60%;
+    margin:0 auto;
+    background-size: 100% 100%;
   }
   .me{
-    background:url('../img/me-1.png') ;
-    height:16px;
-    width:16px;
+    background:url('../img/me-1.png') no-repeat top center;
+    height:60%;
+    width:60%;
+    margin:0 auto;
+    background-size: 100% 100%;
   }
   .me.active{
-    background:url('../img/me-2.png');
-    height:16px;
-    width:16px;
+    background:url('../img/me-2.png') no-repeat top center;
+    height:60%;
+    width:60%;
+    margin:0 auto;
+    background-size: 100% 100%;
   }
+}
+
+header{
+  height:.4rem;
+  width:100%;
+  background-color: yellowgreen;
+  text-align: center
 }
