@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!--<img src="./assets/logo.png">-->
-    <router-view></router-view>
+    <router-view ></router-view>
     <nav>
         <router-link to='/home'><i class="icon disB home" :class='currentIcon.home'>icon</i>首页</router-link>
         <router-link to='/classify'><i class="icon disB classify" :class='currentIcon.classify'>icon</i>分类</router-link>
@@ -21,7 +21,7 @@ export default {
   data(){
     return {
       currentIcon:{
-        home:'active',
+        home:'',
         classify:'',
         search:'',
         cart:'',
@@ -30,7 +30,8 @@ export default {
     }
   },
   created(){
-
+    var current=this.$route.name
+    this.curremtIcon(current);
   },
   mounted(){
 

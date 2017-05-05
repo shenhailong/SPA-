@@ -1,0 +1,18 @@
+.me-list{
+  margin-bottom:.15rem;
+  background-color: #fff;
+  .list-info{
+    padding:.1rem;
+    font-size: .15rem;
+  }
+}
+
+.childPage{
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  background:yellowgreen
+}

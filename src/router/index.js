@@ -6,11 +6,18 @@ import indexPage from '@/pages/index'
 import Search from '@/pages/search'
 import Cart from '@/pages/Cart'
 import Me from '@/pages/Me'
+// me页面子页面
+import Order from '@/pages/me/Order'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: indexPage
+    },
     {
       path: '/home',
       name: 'home',
@@ -34,7 +41,13 @@ export default new Router({
     {
       path: '/me',
       name: 'me',
-      component: Me
+      component: Me,
+      children:[
+        {
+          path:'order',
+          component:Order
+        }
+      ]
     }
   ]
 })

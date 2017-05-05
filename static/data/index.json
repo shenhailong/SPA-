@@ -1,0 +1,52 @@
+{
+  "code" : "1",
+  "message" : "Success",
+  "data" : {
+    "WAP_HOME_SLIDER_BANNER" : [ {
+      "id" : 62,
+      "position" : "WAP_HOME_SLIDER_BANNER",
+      "title" : "111",
+      "advWord" : "111",
+      "imgUrl" : "ad/2017/04/06/1440.jpg",
+      "linkUrl" : "http://t11.bangjf.com/wap/coupons/couponslist",
+      "displayOrder" : 0,
+      "visible" : true,
+      "bgColor" : "111",
+      "loadableImgUrl" : "/static/img/default_w.jpg"
+    }, {
+      "id" : 64,
+      "position" : "WAP_HOME_SLIDER_BANNER",
+      "title" : "1",
+      "advWord" : "1",
+      "imgUrl" : "ad/2017/04/20/1488.jpg",
+      "linkUrl" : "https://t11.bangjf.com/wap/coupons/couponslist?groupCode=20170426003&getType=handReceive",
+      "displayOrder" : 0,
+      "visible" : true,
+      "bgColor" : "1",
+      "loadableImgUrl" : "/static/img/default_w.jpg"
+    }, {
+      "id" : 38,
+      "position" : "WAP_HOME_SLIDER_BANNER",
+      "title" : "年会中奖领奖",
+      "advWord" : "年会中奖领奖",
+      "imgUrl" : "ad/2017/04/26/1539.jpg",
+      "linkUrl" : "https://t11.bangjf.com/wap/gift/gift_get",
+      "displayOrder" : 2,
+      "visible" : true,
+      "bgColor" : "红色",
+      "loadableImgUrl" : "/static/img/default_w.jpg"
+    }, {
+      "id" : 61,
+      "position" : "WAP_HOME_SLIDER_BANNER",
+      "title" : "1",
+      "advWord" : "1",
+      "imgUrl" : "ad/2017/03/27/1401.jpg",
+      "linkUrl" : "https://t11.bangjf.com/wap/coupons/couponslist?groupCode=BFBO00004&getType=handReceive",
+      "displayOrder" : 23,
+      "visible" : true,
+      "bgColor" : "1",
+      "loadableImgUrl" : "/static/img/default_w.jpg"
+    } ]
+  },
+  "success" : true
+}

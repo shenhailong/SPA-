@@ -4,16 +4,16 @@
     <div class="content">
       <!--banner-->
       <div ref="bannerSwiper"
-           class="swiper-container swiper-container1">
-        <div class="swiper-wrapper">
+           class="swiper-container swiper-container1" style="height:146px;">
+        <div class="swiper-wrapper" style="height:146px;">
           <div v-for="banner in banners"
             :key="banner.id"
             class="swiper-slide">
             <a :href="banner.link">
-              <img v-bind:data-src="banner.img" class="swiper-lazy"
+              <img v-bind:data-src="banner.loadableImgUrl" class="swiper-lazy"
                  alt="">
             </a>
-            <div class="swiper-lazy-preloader"></div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
@@ -23,6 +23,9 @@
 </template>
 
 <script>
+import Vue from 'vue'
+import axios from 'axios'
+//import Swiper from 'Swiper'
 export default {
   name: 'app',
   components:{
@@ -30,43 +33,48 @@ export default {
   },
   data(){
     return {
-      currentIcon:{
-        home:'active',
-        classify:'',
-        search:'',
-        cart:'',
-        me:''
-      }
+      banners :[],
+      loaded : false
     }
   },
   created(){
-
+    this.fetchData();
   },
   mounted(){
 
   },
   methods:{
-    //底部导航切换显示当前
-    curremtIcon(current){
-      this.currentIcon={
-        home:'',
-        classify:'',
-        search:'',
-        cart:'',
-        me:''
-      }
-      for(var key in this.currentIcon){
-        if(current==key){
-          this.currentIcon[key]='active'
-          break;
+    //轮播图
+    fetchData: function(){
+      var self=this;
+      axios.get("/static/data/index.json").then((res)=>{
+        if(res.data.code==='1'){
+          self.loaded  = false
+          self.banners = res.data.data.WAP_HOME_SLIDER_BANNER;
+          self.loaded  =true;
         }
-      }
+      })
     }
 
   },
   watch:{
-    '$route'(to,from){
-      this.curremtIcon(to.name)
+    "loaded":function(val){
+      this.$nextTick(function(){
+        try{
+            this.bannerSwiper && this.bannerSwiper.destroy()
+            this.bannerSwiper = new Swiper(this.$refs.bannerSwiper, {
+              autoplay: 5000,
+              speed: 800,
+              loop: true,
+              lazyLoading: true,
+              lazyLoadingOnTransitionStart: true,
+              lazyLoadingInPrevNext: true,
+              lazyLoadingInPrevNextAmount: 2
+            })
+          }catch(e){
+            console.log(e)
+          }
+      })
     }
   }
 }

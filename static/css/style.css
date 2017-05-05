@@ -264,6 +264,9 @@ li {
 .disB {
   display: block !important; }
 
+.bg-34bba9 {
+  background-color: #34bba9; }
+
 /* 组件样式*/
 nav {
   height: .4rem;
@@ -349,8 +352,27 @@ nav {
 header {
   height: .4rem;
   width: 100%;
-  background-color: yellowgreen;
-  text-align: center; }
+  background-color: #fff;
+  text-align: center;
+  line-height: .4rem;
+  font-size: .16rem;
+  color: #35bba9; }
+
+.me-list {
+  margin-bottom: .15rem;
+  background-color: #fff; }
+  .me-list .list-info {
+    padding: .1rem;
+    font-size: .15rem; }
+
+.childPage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  background: yellowgreen; }
 
 .icon {
   background-repeat: no-repeat;
