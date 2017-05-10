@@ -1,0 +1,29 @@
+@keyframes fadeInRight {
+  from {
+    opacity:1;
+    transform:translateX(100%);
+  }
+  to{
+    opacity: 1;
+    transform: none;
+
+  }
+}
+
+.fadeInRight{
+  animation: fadeInRight .3s
+}
+
+@keyframes fadeOutRight{
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 1;
+      transform: translateX(100%);
+  }
+}
+
+.fadeOutRight{
+  animation: fadeOutRight .3s
+}

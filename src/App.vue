@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <!--<img src="./assets/logo.png">-->
-    <router-view ></router-view>
+    <keep-alive>
+      <router-view ></router-view>
+    </keep-alive>
     <nav>
         <router-link to='/home'><i class="icon disB home" :class='currentIcon.home'>icon</i>首页</router-link>
         <router-link to='/classify'><i class="icon disB classify" :class='currentIcon.classify'>icon</i>分类</router-link>

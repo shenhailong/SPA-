@@ -5,7 +5,7 @@ import Hello from '@/components/Hello'
 import indexPage from '@/pages/index'
 import Search from '@/pages/search'
 import Cart from '@/pages/Cart'
-import Me from '@/pages/Me'
+import Me from '@/pages/me/Me'
 // me页面子页面
 import Order from '@/pages/me/Order'
 

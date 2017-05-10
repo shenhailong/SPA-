@@ -74,7 +74,7 @@ body {
 
 html, body {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: #fff; }
 
 *,
@@ -267,13 +267,94 @@ li {
 .bg-34bba9 {
   background-color: #34bba9; }
 
+.f12 {
+  font-size: .12rem !important; }
+
+.f18 {
+  font-size: .18rem !important; }
+
+[flex] {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+[flex~="main:justify"] {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+[flex~="cross:center"] {
+  box-align: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+[flex~="box:mean"] > * {
+  width: 0%;
+  height: auto;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1; }
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 1;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+
+@keyframes fadeInRight {
+  from {
+    opacity: 1;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+
+.fadeInRight {
+  -webkit-animation: fadeInRight .3s;
+          animation: fadeInRight .3s; }
+
+@-webkit-keyframes fadeOutRight {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%); } }
+
+@keyframes fadeOutRight {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%); } }
+
+.fadeOutRight {
+  -webkit-animation: fadeOutRight .3s;
+          animation: fadeOutRight .3s; }
+
 /* 组件样式*/
 nav {
   height: .4rem;
   width: 100%;
-  border-top: 1px solid #000;
+  border-top: 1px solid #aaa;
   position: fixed;
   bottom: 0;
+  left: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -358,19 +439,42 @@ header {
   font-size: .16rem;
   color: #35bba9; }
 
+.wrap {
+  background-color: #f9f9f9;
+  height: 100%;
+  width: 100%;
+  color: #000; }
+  .wrap a {
+    color: #333; }
+    .wrap a .right-list {
+      padding-right: .15rem; }
+
 .me-list {
   margin-bottom: .15rem;
   background-color: #fff; }
   .me-list .list-info {
     padding: .1rem;
     font-size: .15rem; }
+    .me-list .list-info .user-img {
+      width: .5rem;
+      height: .5rem;
+      -webkit-border-radius: 100%;
+              border-radius: 100%;
+      margin: .15rem .1rem .15rem 0; }
+    .me-list .list-info .user-info {
+      color: #fff; }
+    .me-list .list-info .item {
+      text-align: center; }
+      .me-list .list-info .item .num {
+        color: #f90; }
 
 .childPage {
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
   z-index: 999;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background: yellowgreen; }
 
@@ -385,5 +489,66 @@ header {
   margin: 0;
   padding: 0;
   background-position: center center; }
+
+.icon-me-order {
+  background: url("../img/icon-me-order.png") no-repeat;
+  height: .15rem;
+  width: .15rem;
+  background-size: 100% 100%;
+  margin-right: .05rem; }
+
+.icon-me-address {
+  background: url("../img/icon-me-address.png") no-repeat;
+  height: .15rem;
+  width: .15rem;
+  background-size: 100% 100%;
+  margin-right: .05rem; }
+
+.icon-me-question {
+  background: url("../img/icon-me-question.png") no-repeat;
+  height: .15rem;
+  width: .15rem;
+  background-size: 100% 100%;
+  margin-right: .05rem; }
+
+.icon-me-contact {
+  background: url("../img/icon-me-contact.png") no-repeat;
+  height: .15rem;
+  width: .15rem;
+  background-size: 100% 100%;
+  margin-right: .05rem; }
+
+.icon-arrow {
+  background: url("../img/icon-arrow-left.png") no-repeat;
+  height: .15rem;
+  width: .085rem;
+  background-size: 100% 100%;
+  vertical-align: middle; }
+
+.icon-arrow-right {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.icon-me-card {
+  background: url("../img/icon-me-card.png") no-repeat;
+  height: .36rem;
+  width: .36rem;
+  background-size: 100% 100%;
+  vertical-align: middle; }
+
+.icon-me-cent {
+  background: url("../img/icon-me-cent.png") no-repeat;
+  height: .36rem;
+  width: .36rem;
+  background-size: 100% 100%;
+  vertical-align: middle; }
+
+.icon-me-coupon {
+  background: url("../img/icon-me-coupon.png") no-repeat;
+  height: .36rem;
+  width: .36rem;
+  background-size: 100% 100%;
+  vertical-align: middle; }
 
 /*# sourceMappingURL=style.css.map */

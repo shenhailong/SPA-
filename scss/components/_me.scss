@@ -1,9 +1,37 @@
+.wrap{
+  background-color: #f9f9f9;
+  height:100%;
+  width:100%;
+  color:#000;
+  a{
+    color: #333;
+    .right-list{
+      padding-right: .15rem;
+    }
+  }
+}
+
 .me-list{
   margin-bottom:.15rem;
   background-color: #fff;
   .list-info{
     padding:.1rem;
     font-size: .15rem;
+    .user-img{
+      width:.5rem;
+      height:.5rem;
+      border-radius:100%;
+      margin:.15rem .1rem .15rem 0;
+    }
+    .user-info{
+      color:#fff;
+    }
+    .item{
+      text-align: center;
+      .num{
+        color:#f90;
+      }
+    }
   }
 }
 
@@ -11,8 +39,9 @@
   position: absolute;
   top:0;
   left:0;
+  bottom:0;
   z-index: 999;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background:yellowgreen
 }
