@@ -3,16 +3,16 @@
     <header>个人中心</header>
     <div class="content">
       <div class="me-list">
-        <div class="list-info bg-34bba9" flex="cross:center main:justify">
+        <router-link to="/login" class="list-info bg-34bba9" flex="cross:center main:justify">
           <div flex="cross:center">
             <img src="static/img/default-info.png" class="user-img"/>
             <div class="user-info f18">
-              <p>沈**</p>
+              <p>{{username}}</p>
               <p>18611111111</p>
             </div>
           </div>
           <i class="icon icon-arrow icon-arrow-right"></i>
-        </div>
+        </router-link>
         <div class="list-info" flex="box:mean">
           <router-link to="/me/order" class="item" >
             <i class="icon icon-me-card"></i>
@@ -65,18 +65,27 @@
 </template>
 
 <script>
+import {mapState} from 'vuex'
 export default {
   name: 'me',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      username: '登录/注册',
+      getUserinfo:{}//获取用户信息
     }
   },
   computed:{
-
+    ...mapState(['userInfo'])
   },
   methods:{
 
+  },
+  watch:{
+    userInfo:function(value){
+      console.log(value)
+      this.getUserinfo = value || {};
+      this.username=this.getUserinfo&&this.getUserinfo.username||'登录/注册'
+    }
   }
 }
 </script>

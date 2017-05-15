@@ -4,9 +4,14 @@
 @import "base/base.scss";
 @import "base/flex.scss";
 @import "base/transitions.scss";
+@import "base/mixin.scss";//函数
+
+/*主页面样式*/
+@import "components/index.scss";
+@import "components/me.scss";
+@import "components/login.scss";
 
 /* 组件样式*/
 
-@import "components/index.scss";
-@import "components/me.scss";
+
 @import "components/icon.scss";

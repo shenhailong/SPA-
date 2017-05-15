@@ -6,6 +6,8 @@ import indexPage from '@/pages/index'
 import Search from '@/pages/search'
 import Cart from '@/pages/Cart'
 import Me from '@/pages/me/Me'
+
+import Login from '@/pages/login/Login'
 // me页面子页面
 import Order from '@/pages/me/Order'
 
@@ -48,6 +50,10 @@ export default new Router({
           component:Order
         }
       ]
+    },
+    {
+      path:'/login',
+      component:Login
     }
   ]
 })

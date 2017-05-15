@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeaderBar></HeaderBar>
+    <Header-bar></Header-bar>
     dingdan
   </div>
 </template>

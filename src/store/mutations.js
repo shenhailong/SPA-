@@ -5,6 +5,7 @@ import {
 
 export default {
   [GET_USERINFO](state,info){
-
+    state.userInfo=info;
+    console.log(info)
   }
 }

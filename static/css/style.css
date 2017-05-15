@@ -347,7 +347,7 @@ li {
   -webkit-animation: fadeOutRight .3s;
           animation: fadeOutRight .3s; }
 
-/* 组件样式*/
+/*主页面样式*/
 nav {
   height: .4rem;
   width: 100%;
@@ -361,7 +361,8 @@ nav {
   display: flex;
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
-          justify-content: space-around; }
+          justify-content: space-around;
+  z-index: 1; }
   nav a {
     display: block;
     height: 100%;
@@ -478,6 +479,34 @@ header {
   width: 100%;
   background: yellowgreen; }
 
+.loginContent {
+  height: 100vh;
+  width: 100vw;
+  background-color: #F5F5F5;
+  z-index: 99; }
+  .loginContent .loginForm {
+    background-color: #fff;
+    margin-top: .1rem; }
+    .loginContent .loginForm .inputContent {
+      padding: .12rem .12rem;
+      border-bottom: 1px solid #f1f1f1; }
+      .loginContent .loginForm .inputContent input {
+        font-size: 0.16rem;
+        color: #666;
+        border: none;
+        width: 50%; }
+  .loginContent .loginBtn {
+    height: .40rem;
+    width: 90%;
+    margin: .2rem auto;
+    text-align: center;
+    -webkit-border-radius: 1%;
+            border-radius: 1%;
+    line-height: .40rem;
+    font-size: 0.18rem;
+    color: #fff; }
+
+/* 组件样式*/
 .icon {
   background-repeat: no-repeat;
   background-size: 100% 100%;
