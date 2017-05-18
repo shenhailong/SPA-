@@ -1,3 +1,4 @@
+// 右侧划入
 @keyframes fadeInRight {
   from {
     opacity:1;
@@ -14,7 +15,7 @@
   animation: fadeInRight .3s
 }
 
-@keyframes fadeOutRight{
+@keyframes fadeOutRight {
   from {
       opacity: 1;
   }
@@ -26,4 +27,26 @@
 
 .fadeOutRight{
   animation: fadeOutRight .3s
+}
+
+// 弹性弹出
+.bounce-enter-active {
+  animation: bounce-in .5s
+}
+
+.bounce-leave-active {
+  animation: bounce-out .5s
+}
+
+@keyframes bounce-in {
+  0%   { transform: scale(1) }
+  35%  { transform: scale(.8) }
+  70%  { transform: scale(1.1) }
+  100% { transform: scale(1) }
+}
+@keyframes bounce-out {
+  0%   { transform: scale(1) }
+  35%  { transform: scale(.8) }
+  70%  { transform: scale(1.2) }
+  100% { transform: scale(0) }
 }

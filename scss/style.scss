@@ -5,6 +5,7 @@
 @import "base/flex.scss";
 @import "base/transitions.scss";
 @import "base/mixin.scss";//函数
+@import "base/iconfont/ionicons.scss";
 
 /*主页面样式*/
 @import "components/index.scss";
@@ -15,3 +16,4 @@
 
 
 @import "components/icon.scss";
+@import "components/tip.scss";

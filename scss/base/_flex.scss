@@ -17,3 +17,17 @@
   flex-grow:1;
   flex-shrink: 1;
 }
+
+/*
+    主轴方向：从上到下
+*/
+
+[flex~="dir:top"] {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
