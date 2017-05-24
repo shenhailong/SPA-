@@ -9,7 +9,7 @@ import Me from '@/pages/me/Me'
 
 import Login from '@/pages/login/Login'
 // me页面子页面
-import Order from '@/pages/me/Order'
+import Order from '@/pages/me/children/Order'
 
 Vue.use(Router)
 

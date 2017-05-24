@@ -1,0 +1,69 @@
+.order-content{
+  background-color: #f9f9f9;
+
+  .order-list{
+    background-color: #fff;
+    margin: .1rem 0 ;
+
+    .order-num{
+      padding: .1rem;
+      background-color: #fff;
+      font-size: .15rem;
+    }
+
+    .order-info{
+      padding: .1rem;
+      font-size: .15rem;
+      background-color: #f9f9f9;
+      .item{
+        padding: 0;
+
+        img{
+          margin-right: .1rem;
+          max-width: 100%;
+        }
+
+        .middle{
+          padding-right: .15rem;
+        }
+
+        .price{
+          text-align: right;
+        }
+      }
+    }
+
+    .order-total{
+      padding: .1rem;
+      border-bottom: 1px solid #f0f0f0;
+      font-size: .15rem;
+      text-align: right;
+    }
+
+    .order-btn{
+      padding: .1rem;
+
+      .btn{
+        width: .7rem;
+        height:.34rem;
+        line-height: .32rem;
+        text-align: center;
+        border-radius: .05rem;
+        font-size: .12rem;
+        margin-left: .1rem;
+      }
+
+      .btn.orange{
+        color: #fff;
+        background-color: #ffaf00;
+        border:1px solid #ffaf00;
+      }
+
+      .btn.white{
+        color: #ffaf00;
+        background-color: #fff;
+        border:1px solid #ffaf00;
+      }
+    }
+  }
+}

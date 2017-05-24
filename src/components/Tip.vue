@@ -90,7 +90,6 @@
     },
     methods:{
       close:function(){
-        console.log(787878)
         this.$emit('closeTip')
       }
     }

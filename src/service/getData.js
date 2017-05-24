@@ -16,9 +16,11 @@ if(false){
 
 }else{
   var getUser = () => setpromise(login.userInfo);//用户信息
+  var phoneLogin=(phone,password,code)=> setpromise(login.userInfo);//手机登录获取用户信息
 }
 
 
 export {
-  getUser
+  getUser,
+  phoneLogin
 }
