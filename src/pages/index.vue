@@ -19,17 +19,19 @@
       </div>
       <!--banner-->
     </div>
+    <nav-bar></nav-bar>
   </div>
 </template>
 
 <script>
 import Vue from 'vue'
 import axios from 'axios'
+import navBar from "../components/NavBar"
 //import Swiper from 'Swiper'
 export default {
   name: 'app',
   components:{
-
+      navBar
   },
   data(){
     return {

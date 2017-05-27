@@ -3,7 +3,7 @@
     <header>个人中心</header>
     <div class="content">
       <div class="me-list">
-        <router-link :to="userInfo?'/me/order':'/login'" class="list-info bg-34bba9" flex="cross:center main:justify">
+        <router-link :to="userInfo?'/order':'/login'" class="list-info bg-34bba9" flex="cross:center main:justify">
           <div flex="cross:center">
             <img src="static/img/default-info.png" class="user-img"/>
             <div class="user-info f18">
@@ -14,7 +14,7 @@
           <i class="icon icon-arrow icon-arrow-right"></i>
         </router-link>
         <div class="list-info" flex="box:mean">
-          <router-link to="/me/order" class="item" >
+          <router-link to="/order" class="item" >
             <i class="icon icon-me-card"></i>
             <p>积分</p>
             <p><span class="num f18">{{cent}}</span></p>
@@ -59,13 +59,14 @@
         <router-view class="childPage"></router-view>
       </transition>
     </div>
-
+    <nav-bar></nav-bar>
 
   </div>
 </template>
 
 <script>
 import {mapState} from 'vuex'
+import navBar from "../../components/NavBar"
 export default {
   name: 'me',
   data () {
@@ -77,6 +78,9 @@ export default {
       card:'0',//礼品卡
       getUserinfo:{}//获取用户信息
     }
+  },
+  components:{
+      navBar
   },
   computed:{
     ...mapState(['userInfo'])

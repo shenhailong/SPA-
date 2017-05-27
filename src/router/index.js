@@ -9,7 +9,7 @@ import Me from '@/pages/me/Me'
 
 import Login from '@/pages/login/Login'
 // me页面子页面
-import Order from '@/pages/me/children/Order'
+import Order from '@/pages/me/Order'
 
 Vue.use(Router)
 
@@ -44,12 +44,11 @@ export default new Router({
       path: '/me',
       name: 'me',
       component: Me,
-      children:[
-        {
-          path:'order',
-          component:Order
-        }
-      ]
+    },
+    {
+      path: '/order',
+      name: 'order',
+      component:Order,
     },
     {
       path:'/login',
