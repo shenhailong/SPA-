@@ -1,5 +1,5 @@
 <template>
-  <div>sousou页面</div>
+  <div>souso222222u页面</div>
 </template>
 
 <script>
